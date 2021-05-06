@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Clock"></activity>
+        <activity android:name=".TreatmentSess">
+
+        </activity>
+        <activity android:name=".CancelPage2" />
+        <activity android:name=".Bills" />
+        <activity android:name=".AddPatient2" />
+        <activity android:name=".clinictoday" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AprilActivity" />
+        <activity android:name=".JanuaryActivity" />
+        <activity android:name=".MarsActivity" />
+        <activity android:name=".Navigation" />
+        <activity android:name=".bottomview" />
+        <activity android:name=".Appointedlist" />
+        <activity android:name=".ApprovePatient" />
+        <activity android:name=".bottomview2" />
+        <activity android:name=".ClinicManager" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".Notification" />
+    </application>
+
+</manifest>

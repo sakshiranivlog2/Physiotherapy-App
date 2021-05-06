@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Add Patient"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/l9"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="140dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="45dp"
+            android:hint=" Mr./Mrs." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l10"
+        android:layout_width="372dp"
+        android:layout_height="31dp"
+        android:layout_below="@+id/l9"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="DOB"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_date6"
+            android:layout_width="132dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="47dp"
+            android:hint="DOB" />
+
+        <ImageButton
+            android:id="@+id/ib1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l11"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l10"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="27dp"
+            android:gravity="center"
+            android:text="Gender"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="38dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="65dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="5dp"
+                android:text="M"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:layout_width="65dp"
+                android:layout_height="44sp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:text="F"
+                android:textSize="15sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l12"
+        android:layout_width="384dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/l11"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="27dp"
+            android:gravity="center"
+            android:text="Mobile No."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="183dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:hint="Mobile No."
+            android:inputType="phone"
+            android:maxLength="10" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l13"
+        android:layout_width="394dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/l12"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="17dp"
+            android:gravity="center"
+            android:text="Email ID"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="189dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="19dp"
+            android:hint="Email ID"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"
+             />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l13"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="27dp"
+            android:gravity="center"
+            android:text="Visit Type"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18sp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:text="Clinic"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:layout_width="84dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Home"
+                android:textSize="15dp" />
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l19"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@+id/l14"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:gravity="center"
+            android:text="Ref.Mobile No"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="182dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="23dp"
+            android:hint="Ref.Mobile No."
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:maxLength="10" />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l14"
+        android:text="SUBMIT"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="85dp" />
+
+
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="107dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/s1"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/bt_jj"
+                    android:layout_width="64dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="30dp"
+                    app:fabCustomSize="34dp"
+                    android:background="#86F1C7"
+                    android:src="@drawable/ic_add_black"
+                    android:layout_marginBottom="30dp"
+                    >
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/s2"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/bt_float2"
+                    android:layout_width="64dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#86F1C7"
+                    android:src="@drawable/ic_add_black"
+                    app:fabCustomSize="34dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="86dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/s3"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="64dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#86F1C7"
+                    android:src="@drawable/ic_add_black"
+                    app:fabCustomSize="34dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="79dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/s4"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="64dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="30dp"
+                    app:fabCustomSize="34dp"
+                    android:background="#86F1C7"
+                    android:src="@drawable/ic_add_black"
+                    android:layout_marginBottom="30dp"
+                    />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

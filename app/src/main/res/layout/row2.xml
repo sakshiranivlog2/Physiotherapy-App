@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear_layout2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/code_name2"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/list"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/version9"
+                android:layout_width="248dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="30dp"
+                android:gravity="center"
+                android:text="hello"
+                android:textAlignment="viewStart"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/description2"
+                android:layout_width="40dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/version"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_arrow_drop" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#E6E2E6">
+
+            <TextView
+                android:id="@+id/version22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+               android:layout_marginTop="5dp"
+                android:text="No Record Found"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

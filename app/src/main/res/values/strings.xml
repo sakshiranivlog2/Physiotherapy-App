@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="code_name">Code Name</string>
+    <string name="description_textview">Description TextView</string>
+    <string name="api_level">Api Level</string>
+    <string name="version">Version</string>
+    <string name="s1">Add\n
+                    Appointments
+    </string>
+
+    <string name="form3">WALLET \n
+                         Rs.</string>
+
+    <string name="form4">SEND BY \n
+                          EMAIL</string>
+    <string name="s2">Add\n
+                    Patient
+    </string>
+    <string name="s3">Add\n
+                    Income
+    </string>
+    <string name="s4">Add\n
+                    Expense
+    </string>
+    <string name="s5">Today\'s \n
+                      Appointments \n
+                      Booked
+    </string>
+
+    <string name="c9">Submit\n
+                        and \n
+                      Save
+    </string>
+    <string name="todokk">TODO</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notification">
+
+    <LinearLayout
+        android:id="@+id/h11"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="20dp"
+            android:text="PHYSIOMATICA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/atoo"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h11"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:text="Notifications"
+        android:textColor="@android:color/black"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout7"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ic_launcher_background"
+        app:tabIndicatorColor="@android:color/holo_blue_dark"
+        app:tabIndicatorHeight="4dp"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager7"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_marginTop="190dp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/viewpager7"
+        android:id="@+id/tablayout8"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_launcher_background"
+        app:tabIndicatorColor="@android:color/holo_blue_dark"
+        app:tabIndicatorHeight="4dp"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager8"
+        android:layout_width="match_parent"
+        android:layout_height="248dp"
+        android:layout_below="@+id/tablayout8"
+        android:layout_marginTop="1dp" />
+
+
+
+</RelativeLayout>

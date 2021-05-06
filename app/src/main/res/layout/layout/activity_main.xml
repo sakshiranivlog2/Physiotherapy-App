@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="20dp"
+            android:text="PHYSIOMATICA"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/attt"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/h1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:text="Bills and Invoices"
+        android:textColor="@android:color/black"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/ic_launcher_background"
+        app:tabIndicatorColor="@android:color/holo_red_light"
+        app:tabIndicatorHeight="4dp"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@android:color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="190dp" />
+
+    <LinearLayout
+        android:id="@+id/mm"
+        android:layout_width="406dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/viewpager"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="123dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DOWNLOAD PDF"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="127dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SEND BY WHATSAPP"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="124dp"
+            android:layout_height="90dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SEND BY EMAIL"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mo"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/mm"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mm"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="EXPENSE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mm"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_date1"
+                android:layout_width="302dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:id="@+id/ib1"
+                android:layout_width="40dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/mo"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mm"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="INCOME"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mm"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/et_date2"
+                android:layout_width="306dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp" />
+
+            <ImageButton
+                android:id="@+id/ib2"
+                android:layout_width="40dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_marginLeft="20dp"
+                android:layout_height="40dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/mml"
+        android:layout_width="406dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/ll"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="89dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:text="DOWNLOAD PDF"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="129dp"
+            android:layout_height="87dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="25dp"
+                    android:text="MODIFY"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="117dp"
+            android:layout_height="87dp"
+            android:padding="10dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="57dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/form3"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

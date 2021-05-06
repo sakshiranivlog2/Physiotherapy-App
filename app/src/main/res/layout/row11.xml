@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="3dp"
+    android:layout_marginTop="7dp"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linear_layout11"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll11"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            tools:ignore="UseCompoundDrawables">
+
+
+            <TextView
+                android:id="@+id/version11"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:text="Today's Income"
+                android:textAlignment="viewStart"
+                android:textColor="#0B0A0B"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/description11"
+                android:layout_width="40dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_arrow_drop" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/expandable_layout11"
+            android:layout_width="match_parent"
+            android:layout_height="414dp"
+            android:background="#E6E2E6">
+
+            <TextView
+                android:id="@+id/version111"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="70dp"
+                android:text="No Record Found"
+                android:textColor="#111112"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
