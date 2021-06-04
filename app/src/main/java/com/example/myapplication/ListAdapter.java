@@ -184,16 +184,7 @@ public class ListAdapter extends BaseExpandableListAdapter {
         {
             img.setImageResource( R.drawable.list);
         }
-        else
-        if(childName=="Digital Exercises")
-        {
-            img.setImageResource( R.drawable.exercise );
-        }
-        else
-        if(childName=="Digital Prescription")
-        {
-            img.setImageResource( R.drawable.pres);
-        }
+
         else
         if(childName=="Physio Staff")
         {
@@ -263,12 +254,69 @@ public class ListAdapter extends BaseExpandableListAdapter {
         {
             img.setImageResource( R.drawable.logout);
         }
+        if(childName=="My Account")
+        {
+            img.setImageResource( R.drawable.act);
+        }
+        if(childName=="Password Change")
+        {
+            img.setImageResource( R.drawable.pa);
+        }
+        if(childName=="My Profile")
+        {
+            img.setImageResource( R.drawable.po);
+        }
+        if(childName=="Logout")
+        {
+            img.setImageResource( R.drawable.logout);
+        }
+        if(childName=="My Clinic details")
+        {
+            img.setImageResource( R.drawable.cde);
+        }
+        if(childName=="My Invoice Settings")
+        {
+            img.setImageResource( R.drawable.inv);
+        }
+        if(childName=="My Master Lists")
+        {
+            img.setImageResource( R.drawable.ma);
+        }
+        if(childName=="My Calendar Settings")
+        {
+            img.setImageResource( R.drawable.csl);
+        }
+        if(childName== "Clinic Health Report")
+        {
+            img.setImageResource( R.drawable.chi);
+        }
+        if(childName=="Notifications")
+        {
+            img.setImageResource( R.drawable.noo);
+        }
+        if(childName=="Clinic Financial Report")
+        {
+            img.setImageResource( R.drawable.cfi);
+        }
+        if(childName== "Physio Performance Report")
+        {
+            img.setImageResource( R.drawable.ppr);
+        }
+        if(childName=="Marketing Report")
+        {
+            img.setImageResource( R.drawable.mrr);
+        }
+        if(childName=="Growth Report")
+        {
+            img.setImageResource( R.drawable.gro);
+        }
+
+
 
         return convertView;
     }
 
-
-
+  
 
     @Override
     public boolean isChildSelectable(int groupPosition, int childPosition) {

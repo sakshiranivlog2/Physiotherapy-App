@@ -27,12 +27,12 @@
             android:layout_height="70dp"
             android:padding="16dp"
              android:scaleType="centerCrop"
-            android:src="@drawable/appointl"
+            android:src="@drawable/ic_launcher_background"
             android:textSize="22sp" />
 
         <TextView
             android:id="@+id/version"
-            android:layout_width="wrap_content"
+            android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
@@ -44,12 +44,12 @@
 
         <TextView
             android:id="@+id/api_level"
-            android:layout_width="77dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="10dp"
-            android:padding="16dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="8dp"
+            android:padding="16dp"
             android:text="Rs. 0"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp"
@@ -57,11 +57,10 @@
 
         <ImageView
             android:id="@+id/description"
-            android:layout_width="40dp"
+            android:layout_width="28dp"
             android:layout_height="63dp"
-            android:layout_marginTop="8dp"
             android:layout_below="@+id/version"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
             android:src="@drawable/ic_arrow_drop" />
     </LinearLayout>
 

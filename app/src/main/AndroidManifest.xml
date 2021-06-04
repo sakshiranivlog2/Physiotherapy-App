@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,16 +13,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Clock"></activity>
-        <activity android:name=".TreatmentSess">
-
-        </activity>
+        <activity android:name=".deleteact"></activity>
+        <activity android:name=".print" />
+        <activity android:name=".whatsapp" />
+        <activity android:name=".ViewPdfActivity" />
+        <activity android:name=".practice" />
+        <activity android:name=".digitalpresc" />
+        <activity android:name=".patientlist" />
+        <activity android:name=".area2" />
+        <activity android:name=".growthlayout" />
+        <activity android:name=".GrowthChart" />
+        <activity android:name=".emailactivity" />
+        <activity android:name=".areagraph" />
+        <activity android:name=".physioperfm" />
+        <activity android:name=".marketingreport" />
+        <activity android:name=".Financereport" />
+        <activity android:name=".HealthReport" />
+        <activity android:name=".semipie" />
+        <activity android:name=".stackedchart" />
+        <activity android:name=".linechart" />
+        <activity android:name=".barchart2" />
+        <activity android:name=".piechart" />
+        <activity android:name=".Chart" />
+        <activity android:name=".TreatmentItem" />
+        <activity android:name=".ExpenseItem" />
+        <activity android:name=".newActivity5" />
+        <activity android:name=".newActivity4" />
+        <activity android:name=".newActivity3" />
+        <activity android:name=".newActivity2" />
+        <activity android:name=".newActivity" />
+        <activity android:name=".SamplePassword" />
+        <activity android:name=".MyNotifications" />
+        <activity android:name=".MyCalender" />
+        <activity android:name=".MyMaster" />
+        <activity android:name=".MyInvoice" />
+        <activity android:name=".MyClinic" />
+        <activity android:name=".MyProfile" />
+        <activity android:name=".Password" />
+        <activity android:name=".Clock" />
+        <activity android:name=".TreatmentSess" />
         <activity android:name=".CancelPage2" />
         <activity android:name=".Bills" />
         <activity android:name=".AddPatient2" />
-        <activity android:name=".clinictoday" />
+        <activity android:name=".clinictoday">
+
+        </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,6 +77,7 @@
         <activity android:name=".ClinicManager" />
         <activity android:name=".Feedback" />
         <activity android:name=".Notification" />
+        <activity android:name=".Border2" />
     </application>
 
 </manifest>

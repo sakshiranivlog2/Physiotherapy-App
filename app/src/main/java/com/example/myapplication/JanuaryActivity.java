@@ -64,8 +64,8 @@ public class JanuaryActivity extends AppCompatActivity {
         versionsList = new ArrayList<>(  );
 
         versionsList.add( new Versions( R.drawable.incc,"Income","Rs.0",R.drawable.ic_arrow_drop ) );
-        versionsList.add( new Versions( R.drawable.appointl,"Appointments","0",R.drawable.ic_arrow_drop) );
-        versionsList.add( new Versions( R.drawable.list,"Patients","0",R.drawable.ic_arrow_drop ) );
+        versionsList.add( new Versions( R.drawable.appointl,"Appointments","   0",R.drawable.ic_arrow_drop) );
+        versionsList.add( new Versions( R.drawable.list,"Patients","   0",R.drawable.ic_arrow_drop ) );
         versionsList.add( new Versions( R.drawable.excc,"Expense","Rs.0",R.drawable.ic_arrow_drop ) );
 
 

@@ -12,14 +12,26 @@
     <string name="s1">Add\n
                     Appointments
     </string>
+    <string name="p1">Only Available\n
+                       On Request
+    </string>
 
     <string name="form3">WALLET \n
                          Rs.</string>
+
+    <string name="form8">This is a computer generated document so does not \n
+                         need any signature.</string>
 
     <string name="form4">SEND BY \n
                           EMAIL</string>
     <string name="s2">Add\n
                     Patient
+    </string>
+    <string name="s9">PDF\n
+                    DOWNLOAD
+    </string>
+    <string name="f9">Total\n
+                    Appointments
     </string>
     <string name="s3">Add\n
                     Income

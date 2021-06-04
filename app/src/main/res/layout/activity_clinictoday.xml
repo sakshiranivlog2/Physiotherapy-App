@@ -1,17 +1,451 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/clinicall"
     android:layout_height="match_parent"
     tools:context=".clinictoday">
 
-    <TextView
-        android:text="clinic today"
-        android:gravity="center"
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/button_rounded4"
+        android:text="Action"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/h1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="55dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/at3"
+        android:layout_width="110dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="94dp"
+        android:gravity="start"
+        android:text="Doctor's Name"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:hint="Doctor Name"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginTop="94dp"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:text="Address"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="130dp"
+        android:gravity="start"
+        android:text="Clinic Name"
+        android:textColor="@android:color/black"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:hint="Clinic Name"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="258dp"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:hint="Address"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="233dp"
+        android:gravity="start"
+        android:text="Digital Prescription"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="292dp"
+        android:gravity="start"
+        android:text="Name"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="285dp"
+        android:gravity="center"
+        android:hint="Patient's Name"
+        android:textColor="@android:color/black"
+        android:textSize="9dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="292dp"
+        android:gravity="start"
+        android:text="Age"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:id="@+id/oo"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="285dp"
+        android:gravity="center"
+        android:hint="Age"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:layout_toRightOf="@+id/oo"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="74dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="228dp"
+        android:gravity="center"
+        android:hint="Date:"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="325dp"
+        android:gravity="center_vertical"
+        android:text="Chief Complaints"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="325dp"
+        android:gravity="center"
+        android:hint="Chief Complaints"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="356dp"
+        android:gravity="center_vertical"
+        android:text="Pain"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="356dp"
+        android:gravity="center"
+        android:hint="Pain"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="418dp"
+        android:gravity="center_vertical"
+        android:text="Investigation"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="418dp"
+        android:gravity="center"
+        android:hint="Investigation"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="449dp"
+        android:gravity="center_vertical"
+        android:text="Treatment Plan"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="449dp"
+        android:gravity="center"
+        android:hint="Treatment Plan"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="480dp"
+        android:gravity="center_vertical"
+        android:text="Notes"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="480dp"
+        android:gravity="center"
+        android:hint="Notes"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="387dp"
+        android:gravity="center_vertical"
+        android:text="Diagnosis"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="387dp"
+        android:gravity="center"
+        android:hint="Diagnosis"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="540dp"
+        android:gravity="center_vertical"
+        android:text="Next Visit On:"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <EditText
+        android:id="@+id/mDisplayDate"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="205dp"
+        android:layout_marginTop="540dp"
+        android:gravity="center"
+        android:hint="Next Visit On"
+        android:textColor="@android:color/black"
+        android:textSize="10dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#86F1C7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="590dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/form8"
+            android:textSize="12dp"
+            android:textStyle="bold" />
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kk"
+        android:layout_width="218dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="657dp"
+        android:padding="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/gmail"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:onClick="gmail1"
+                android:scaleType="fitXY"
+                android:src="@drawable/gm2" />
+
+            <ImageButton
+                android:id="@+id/whatsapp"
+                android:layout_width="44dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:background="@android:color/white"
+                android:onClick="whatsapp1"
+                android:scaleType="fitXY"
+                android:src="@drawable/wh2" />
+
+            <ImageButton
+                android:id="@+id/print"
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@android:color/white"
+                android:onClick="print1"
+                android:scaleType="fitXY"
+                android:src="@drawable/pr2" />
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="37dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:onClick="delete1"
+                android:scaleType="fitXY"
+                android:src="@drawable/dto" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
