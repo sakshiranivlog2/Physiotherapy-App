@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ui"
+        android:layout_width="351dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/h1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="35dp"
+        android:gravity="center"
+        android:textColor="#3949AB"
+        android:text="PROFILE SETTINGS"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/l9"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="45dp"
+            android:hint=" Mr./Mrs." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l10"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l9"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:gravity="center"
+            android:text="Clinic Name"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:layout_marginLeft="38dp"
+            android:hint="Clinic Name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l11"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l10"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="Mobile No."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginLeft="30dp"
+            android:hint="Mobile No." />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/l12"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l11"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:gravity="center"
+            android:text="Phone No."
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="203dp"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginLeft="30dp"
+            android:hint="Phone No." />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l13"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_below="@+id/l12"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="114dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="55dp"
+            android:text="Clinic Address"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="184dp"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:layout_marginLeft="28dp"
+            android:hint="Clinic Address"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/t13"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/l12"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="SAVE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/t14"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/l12"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="142dp"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

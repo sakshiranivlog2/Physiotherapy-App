@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/copy1"
+        android:title="1 month"/>
+
+    <item android:id="@+id/copy2"
+        android:title="3 months"/>
+
+    <item android:id="@+id/copy3"
+        android:title="6 months"/>
+
+    <item android:id="@+id/copy4"
+        android:title="9 months"/>
+
+    <item android:id="@+id/copy5"
+        android:title="12 months"/>
+
+
+</menu>

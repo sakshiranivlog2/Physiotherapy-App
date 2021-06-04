@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/uii"
+        android:layout_width="336dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/h1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="45dp"
+        android:gravity="center"
+        android:text="DAILY  ALERTS"
+        android:textColor="#3949AB"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:id="@+id/l10"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/uii"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="57dp"
+            android:gravity="start"
+            android:text="For Physios"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <Switch
+            android:id="@+id/SwitchDemo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l8"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/l10"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:gravity="center"
+            android:text="For Patients"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/SwitchDemo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="117dp"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/l18"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/l8"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="Yes/No"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/SwitchDemo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="30dp"
+            android:textSize="50sp" />
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/t13"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/l18"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="SAVE"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/t14"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/l18"
+        android:layout_marginLeft="214dp"
+        android:layout_marginTop="62dp"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="CANCEL"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lw"
+        android:layout_width="330dp"
+        android:orientation="vertical"
+        android:layout_height="300dp">
+
+        <EditText
+            android:layout_width="305dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="70dp" />
+
+        <EditText
+            android:layout_width="303dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp" />
+
+        <EditText
+            android:layout_width="303dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp" />
+
+        <EditText
+            android:layout_width="303dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp" />
+
+        <EditText
+            android:layout_width="308dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp" />
+
+
+
+
+
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="30dp"
+        android:layout_toRightOf="@+id/lw"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="300dp">
+
+        <RadioButton
+            android:id="@+id/r1"
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <RadioButton
+            android:layout_marginTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <RadioButton
+            android:layout_marginTop="12dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+
+
+
+    </RadioGroup>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chart">
+
+    
+    <Button
+        android:id="@+id/b1"
+        android:onClick="b11"
+        android:layout_width="match_parent"
+        android:text="Bar Chart"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/p1"
+        android:text="Pie Chart"
+        android:onClick="p11"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/l1"
+        android:text="Line Chart"
+        android:onClick="l11"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/s1"
+        android:text="Stacked Chart"
+        android:onClick="s11"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/h1"
+        android:text="Semi Chart"
+        android:onClick="h11"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/ha"
+        android:text="Clinic heath report"
+        android:onClick="haa"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/hb"
+        android:text="Clinic finance report"
+        android:onClick="hbb"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <Button
+        android:id="@+id/pp"
+        android:text="My Clinic physio performance "
+        android:onClick="ppc"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/mp"
+        android:text="My Clinic marketing report"
+        android:onClick="mpc"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/m1"
+        android:title="1 am"/>
+
+    <item android:id="@+id/m2"
+        android:title="2 am"/>
+
+    <item android:id="@+id/m3"
+        android:title="3 am"/>
+
+    <item android:id="@+id/m4"
+        android:title="4 am"/>
+
+    <item android:id="@+id/m5"
+        android:title="5 am"/>
+
+    <item android:id="@+id/m6"
+        android:title="6 am"/>
+
+    <item android:id="@+id/m7"
+        android:title="7 am"/>
+
+    <item android:id="@+id/m8"
+        android:title="8 am"/>
+
+    <item android:id="@+id/m9"
+        android:title="9 am"/>
+
+    <item android:id="@+id/m10"
+        android:title="10 am"/>
+
+    <item android:id="@+id/m11"
+        android:title="11 am"/>
+
+    <item android:id="@+id/m12"
+        android:title="12 am"/>
+
+    <item android:id="@+id/m13"
+        android:title="1 pm"/>
+
+    <item android:id="@+id/m14"
+        android:title="2 pm"/>
+
+    <item android:id="@+id/m15"
+        android:title="3 pm"/>
+
+    <item android:id="@+id/m16"
+        android:title="4 pm"/>
+
+    <item android:id="@+id/m17"
+        android:title="5 pm"/>
+
+    <item android:id="@+id/m18"
+        android:title="6 pm"/>
+
+    <item android:id="@+id/m19"
+        android:title="7 pm"/>
+
+    <item android:id="@+id/m20"
+        android:title="8 pm"/>
+
+    <item android:id="@+id/m21"
+        android:title="9 pm"/>
+
+    <item android:id="@+id/m22"
+        android:title="10 pm"/>
+
+    <item android:id="@+id/m23"
+        android:title="11 pm"/>
+
+    <item android:id="@+id/m24"
+        android:title="12 pm"/>
+
+</menu>

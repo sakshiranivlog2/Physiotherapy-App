@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ui"
+        android:layout_width="351dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/h1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="35dp"
+        android:gravity="start"
+        android:textColor="#3949AB"
+        android:text="Edit> Treatment Item"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/l9"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:gravity="center"
+            android:text="Treatment Name :"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="122dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="22dp"
+            android:hint="Knee Pain"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l10"
+        android:layout_width="387dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/l9"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:gravity="center"
+            android:text="Description"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="127dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="72dp"
+            android:hint="Description"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l11"
+        android:layout_width="387dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/l10"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:gravity="center"
+            android:text="Treatment Price"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="109dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="47dp"
+            android:hint="Rs. 200"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/t13"
+        android:layout_width="225dp"
+        android:layout_height="57dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/l11"
+        android:layout_marginLeft="89dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

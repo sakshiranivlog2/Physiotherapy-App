@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".physioperfm">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/at3"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="100dp"
+        android:gravity="start"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="My Clinic Physio Performance Report" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView20"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginTop="155dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/et6"
+        android:layout_width="282dp"
+        android:layout_height="40dp"
+        android:textStyle="bold"
+        android:layout_below="@id/recyclerView20"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:layout_below="@+id/recyclerView20"
+        android:id="@+id/ib6"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="1dp"
+        android:layout_width="35dp"
+        android:src="@drawable/date"
+        android:background="@android:color/white"
+        android:scaleType="centerCrop"
+        android:layout_height="35dp"/>
+
+
+
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_below="@+id/et6"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="300dp"
+            android:id="@+id/line_chart6"/>
+
+
+
+
+    <Button
+        android:onClick="phh"
+        android:id="@+id/ph"
+        android:text="@string/s9"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded4"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="645dp"
+        android:layout_marginStart="240dp"
+        android:layout_width="130dp"
+        android:layout_height="60dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Border2">
+
+
+    <LinearLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#86F1C7"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="172dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/alfaslabone_regular"
+            android:text="PHYSIOMATICA"
+            android:textColor="#3949AB"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:src="@drawable/noti"
+            android:text="Clinic Name" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/at3"
+        android:layout_width="300dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="84dp"
+        android:gravity="start"
+        android:textStyle="bold"
+        android:text="My Account"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="150dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="50dp"
+        android:orientation="vertical"
+        android:layout_height="350dp">
+
+        <TextView
+            android:id="@+id/t1"
+            android:text="PLAN"
+            android:textColor="#3949AB"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:id="@+id/t2"
+            android:text="No. of Users"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t3"
+            android:text="No. of Clinics"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t4"
+            android:text="Joining Date"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t5"
+            android:text="Expiry Date"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t6"
+            android:text="Validity"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/t13"
+        android:layout_width="145dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/l1"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="CHANGE"
+         />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_toRightOf="@+id/l1"
+        android:layout_width="150dp"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        android:layout_height="350dp">
+
+        <TextView
+            android:id="@+id/t7"
+            android:text="FREE"
+            android:textColor="#3949AB"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"/>
+
+        <TextView
+            android:id="@+id/t8"
+            android:text="No Record Found"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t9"
+            android:text="No Record Found"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t10"
+            android:text="No Record Found"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t11"
+            android:text="No Record Found"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+        <TextView
+            android:id="@+id/t12"
+            android:text="No Record Found"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="54dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/t14"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/l2"
+        android:layout_marginLeft="212dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/white"
+       android:background="@drawable/button_rounded2"
+        android:gravity="center"
+        android:text="UPGRADE"
+         />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="595dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_copy"
+        android:title="10 min"/>
+
+    <item android:id="@+id/menu_copy2"
+        android:title="20 min"/>
+
+    <item android:id="@+id/menu_copy3"
+        android:title="30 min"/>
+
+    <item android:id="@+id/menu_copy4"
+        android:title="40 min"/>
+
+    <item android:id="@+id/menu_copy5"
+        android:title="50 min"/>
+
+    <item android:id="@+id/menu_copy6"
+        android:title="60 min"/>
+
+</menu>
