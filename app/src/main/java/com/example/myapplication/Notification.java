@@ -9,8 +9,6 @@ import com.google.android.material.tabs.TabLayout;
 
 public class Notification extends AppCompatActivity {
 
-    public static final Object FLAG_AUTO_CANCEL =5 ;
-    public Object flags;
     TabLayout tablayout7,tablayout8;
     ViewPager viewpager7,viewpager8;
 

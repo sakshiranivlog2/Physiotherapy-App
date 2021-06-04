@@ -208,7 +208,7 @@
         android:layout_width="match_parent"
         android:layout_height="175dp"
         android:layout_below="@+id/mo"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"></androidx.recyclerview.widget.RecyclerView>
 
     <LinearLayout
         android:id="@+id/mml"

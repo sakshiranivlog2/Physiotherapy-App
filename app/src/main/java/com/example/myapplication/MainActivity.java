@@ -7,22 +7,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.app.Activity;
 import android.content.ClipData;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ExpandableListAdapter;
 import android.widget.ExpandableListView;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -56,12 +49,11 @@ public class MainActivity extends AppCompatActivity {
     String[] clinicmanagerName = {"Physio Staff","Admin Staff and Others"};
     String[] accountsName = {"Bills & Invoices","Expenses","Income","Wallet"};
     String[] treatmentName = {"Add Session","View Session"};
-    String[] ehrName = {"Patients List"};
-    String[] analyticsName = {"Clinic Health Report","Clinic Financial Report","Physio Performance Report","Marketing Report","Growth Report"};
-    String[] notificationsName = {"notifications"};
+    String[] ehrName = {"Patients List","Digital Exercises","Digital Prescription"};
+    String[] analyticsName = {"Financial Reports","Physio Performance Index","Marketing Reports"};
+    String[] notificationsName = {"Patients List"};
     String[] patientfeedbackName = {"Feedback"};
-    String[] settingsName = {"My Account","Password Change","My Profile","My Clinic details","My Invoice Settings","My Master Lists",
-    "My Calendar Settings","Notifications"};
+    String[] settingsName = {"settings"};
     String[] exitName = {"Logout"};
     String[] defaultName = {"Android Rion"};
 
@@ -123,6 +115,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent;
                 switch (selected){
 
+                    case "View Session":
+                        intent = new Intent(MainActivity.this,MarsActivity.class);
+                        startActivity( intent );
+                        break;
 
                     case "Add Appointment":
                         intent = new Intent(MainActivity.this,MarsActivity.class);
@@ -150,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                     case  "Patients List":
-                        intent = new Intent(MainActivity.this,patientlist.class);
+                        intent = new Intent(MainActivity.this,Notification.class);
                         startActivity( intent );
                         break;
 
@@ -173,70 +169,10 @@ public class MainActivity extends AppCompatActivity {
                         intent = new Intent(MainActivity.this,TreatmentSess.class);
                         startActivity( intent );
                         break;
-
-                    case "My Account":
-                        intent = new Intent(MainActivity.this,Border2.class);
+                    case "Logout":
+                        intent = new Intent(MainActivity.this,MarsActivity.class);
                         startActivity( intent );
                         break;
-
-                    case "Password Change":
-                        intent = new Intent(MainActivity.this,Password.class);
-                        startActivity( intent );
-                        break;
-
-                    case "My Profile":
-                        intent = new Intent(MainActivity.this,MyProfile.class);
-                        startActivity( intent );
-                        break;
-
-                    case "My Clinic details":
-                        intent = new Intent(MainActivity.this,MyClinic.class);
-                        startActivity( intent );
-                        break;
-                    case "My Invoice Settings":
-                        intent = new Intent(MainActivity.this,MyInvoice.class);
-                        startActivity( intent );
-                        break;
-                    case "My Master Lists":
-                        intent = new Intent(MainActivity.this,MyMaster.class);
-                        startActivity( intent );
-                        break;
-
-                    case "My Calendar Settings":
-                        intent = new Intent(MainActivity.this,MyCalender.class);
-                        startActivity( intent );
-                        break;
-                    case  "Clinic Health Report":
-                        intent = new Intent(MainActivity.this,HealthReport.class);
-                        startActivity( intent );
-                        break;
-                    case  "Clinic Financial Report":
-                        intent = new Intent(MainActivity.this,Financereport.class);
-                        startActivity( intent );
-                        break;
-                    case  "Physio Performance Report":
-                        intent = new Intent(MainActivity.this,physioperfm.class);
-                        startActivity( intent );
-                        break;
-                    case  "Marketing Report":
-                        intent = new Intent(MainActivity.this,marketingreport.class);
-                        startActivity( intent );
-                        break;
-                    case  "Growth Report":
-                        intent = new Intent(MainActivity.this,growthlayout.class);
-                        startActivity( intent );
-                        break;
-                    case "Notifications":
-                        intent = new Intent(MainActivity.this,MyNotifications.class);
-                        startActivity( intent );
-                        break;
-                    case  "notifications":
-                        intent = new Intent(MainActivity.this,Notification.class);
-                        startActivity( intent );
-                        break;
-
-
-
 
                 }
                 return true;
@@ -285,7 +221,4 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
         closeDrawer( drawerLayout );
     }
-
-
-
 }
